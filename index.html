@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tax-Calculator </title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mx-auto row bg-light p-0 " id="main-div">
+        <div class="col-md-12 col-sm-6 card-header text-light h2 " id="header">Aus Tax Calculator<span class="p lead  ml-3 text-dark">(2017-2018)</span>
+            <span class="h6 float-right text-secondary">By: Idrees Mo</span></div>
+        <div class="col-md-6 col-sm-12 p-3" id="input">
+            <div id="wrap" class="m-auto text-center text-white input-group row">
+                <label for="" class="col-6 ">Gross Income:</label>
+                <input type="text" class="col-6"> <br>
+                <label for="" class="col-6">Other Income:</label>
+                <input type="text" class="col-6"> <br>
+                <label for="" class="col-6">Tax withheld:</label>
+                <input type="text" class="col-6"> <br>
+                <label for="" class="col-6">Deductions: </label>
+                <input type="text" class="col-6"> <br>
+                <label for="" class="col-6">Tax Offsets:</label>
+                <input type="text" class="col-6"> <br>
+
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 text-white mt-2" id="output">
+            <div class=" m-2 p-2" id="total">Your Total Income:<span class="pl-5"></span>
+            </div>
+            <div class="m-2 p-2" id="taxable">Your Taxable Income: <span class="pl-5"></span>
+            </div>
+            <div class="m-2 p-2 " id="payable">Your Tax Payable: <span class="pl-5"></span>
+            </div>
+            <div class="m-2 p-2" id="return">Your Tax Return: <span class="pl-5"></span>
+            </div>
+
+            <h5 class="btn-group col-12 mt-2">
+                <span class="btn btn-success w-75 mb-1" onclick="cal_Tax()">Calculate</span>
+                <span class=" btn btn-outline-primary mb-1" onclick="reset_All()">Reset</span>
+            </h5>
+            <p class=" text-secondary mb-0 ml-3 text-left">Note: This calculation does not include 2% Medicare Levy!</p>
+            </h5>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+            crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+            crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js " integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em "
+            crossorigin="anonymous "></script>
+        <script src="app.js"></script>
+
+</body>
+
+</html>

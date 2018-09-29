@@ -1,0 +1,40 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+#main-div {
+  box-shadow: 20px 10px 90px rgba(27, 3, 3, 0.466);
+}
+
+#input,
+#header {
+  background: -webkit-linear-gradient(
+    0deg,
+    #05bef7a8 80%,
+    rgba(248, 250, 248, 0.884)
+  );
+}
+
+label,
+input {
+  color: white;
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #ffffffa8;
+  background: #0cb2e42c;
+}
+
+label {
+  background: #05bef7a8;
+  letter-spacing: 1px;
+  padding-top: 6px;
+  /* font-size: 18px; */
+}
+
+#output > div {
+  background: #05bef7a8;
+}
